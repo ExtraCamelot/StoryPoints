@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Points Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Story Points Calculator</h1>
+        <form id="storyPointsForm">
+            <div class="form-group">
+                <label>Неопределенность задачи:</label>
+                <div>
+                    <button type="button" class="btn" data-category="uncertainty" data-value="1">Низкая</button>
+                    <button type="button" class="btn" data-category="uncertainty" data-value="2">Средняя</button>
+                    <button type="button" class="btn" data-category="uncertainty" data-value="3">Высокая</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Сложность решения задачи:</label>
+                <div>
+                    <button type="button" class="btn" data-category="complexity" data-value="1">Низкая</button>
+                    <button type="button" class="btn" data-category="complexity" data-value="2">Средняя</button>
+                    <button type="button" class="btn" data-category="complexity" data-value="3">Высокая</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Объем решения задачи:</label>
+                <div>
+                    <button type="button" class="btn" data-category="volume" data-value="1">Низкий</button>
+                    <button type="button" class="btn" data-category="volume" data-value="2">Средний</button>
+                    <button type="button" class="btn" data-category="volume" data-value="3">Высокий</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Степень взаимодействия с командой:</label>
+                <div>
+                    <button type="button" class="btn" data-category="interaction" data-value="1">Низкая</button>
+                    <button type="button" class="btn" data-category="interaction" data-value="2">Средняя</button>
+                    <button type="button" class="btn" data-category="interaction" data-value="3">Высокая</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Необходимость исследования:</label>
+                <div>
+                    <button type="button" class="btn" data-category="research" data-value="1">Низкая</button>
+                    <button type="button" class="btn" data-category="research" data-value="2">Средняя</button>
+                    <button type="button" class="btn" data-category="research" data-value="3">Высокая</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Риск:</label>
+                <div>
+                    <button type="button" class="btn" data-category="risk" data-value="1">Низкий</button>
+                    <button type="button" class="btn" data-category="risk" data-value="2">Средний</button>
+                    <button type="button" class="btn" data-category="risk" data-value="3">Высокий</button>
+                </div>
+            </div>
+            <div class="result">
+                <p>Итоговые сторипоинты: <span id="totalPoints">0</span></p>
+                <p class="recommendation" id="recommendation"></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
